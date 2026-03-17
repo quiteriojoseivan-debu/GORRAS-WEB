@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
 
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCsOs6bAlOfLGP6v1ydd81e3H1Ena7QJms",
+    authDomain: "gorras-web.firebaseapp.com",
+    projectId: "gorras-web",
+    storageBucket: "gorras-web.firebasestorage.app",
+    messagingSenderId: "842328159823",
+    appId: "1:842328159823:web:08ce3450399af1bb911c3a"
+  };
+
+  // Inicializar Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Base de datos
+  const db = firebase.firestore();
+
+  console.log("Firebase conectado 🔥");
+</script>
+
 <head>
 <meta charset="UTF-8">
 <title>Tienda de Gorras</title>
