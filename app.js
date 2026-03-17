@@ -81,7 +81,7 @@ contenedor.innerHTML += `
 
 function comprar(nombre){
 
-let telefono="2211041222"
+let telefono="2214360469"
 
 let mensaje="Hola, quiero comprar la " + nombre
 
