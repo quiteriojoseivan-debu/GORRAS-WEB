@@ -1,47 +1,23 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Tienda de Gorras</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Gorras</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="contenido">
+  <div class="contenido">
+    <h1>Tienda de Gorras Urbanas</h1>
+    <div id="productos"></div>
+  </div>
 
-<h1>Tienda de Gorras Urbanas</h1>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
 
-<div id="productos"></div>
-
-</div>
-
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyCsOs6bAlOfLGP6v1ydd81e3H1Ena7QJms",
-    authDomain: "gorras-web.firebaseapp.com",
-    projectId: "gorras-web",
-    storageBucket: "gorras-web.firebasestorage.app",
-    messagingSenderId: "842328159823",
-    appId: "1:842328159823:web:08ce3450399af1bb911c3a"
-  };
-
-  // Inicializar Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  // Base de datos
-  const db = firebase.firestore();
-
-  console.log("Firebase conectado 🔥");
-</script>
-
-<!-- Tu JS -->
+<script src="firebase-config.js"></script>
 <script src="app.js"></script>
-
 </body>
 </html>

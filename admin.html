@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador - Tienda de Gorras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contenido admin-panel">
+    <h1>Administrador de Productos</h1>
+
+    <form id="formProducto" class="form-admin">
+      <input type="text" id="nombre" placeholder="Nombre del producto">
+      <input type="number" id="precio" placeholder="Precio">
+      <input type="file" id="imagen" accept="image/*">
+      <button type="submit">Agregar Producto</button>
+    </form>
+
+    <div id="mis-productos"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+  <script src="firebase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
